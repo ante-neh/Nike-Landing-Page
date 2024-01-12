@@ -4,11 +4,11 @@ const Button = ({label, iconUrl}) => {
                         border font-montserrat text-lg leading-none bg-coral-red 
                         rounded-full text-white border-coral-red">
         {label}
-        <img 
-        alt="icon"
-        src={iconUrl}
-        className="rounded-full w-5 h-5 ml-2"
-        />
+        { iconUrl && <img 
+                      alt="icon"
+                      src={iconUrl}
+                      className="rounded-full w-5 h-5 ml-2"
+        />}
     </button>
   )
 }
